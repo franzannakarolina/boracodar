@@ -136,5 +136,11 @@
             <td>26/04/23</td>
             <td align="center" ><a href="16"><img width="300px" src="16/.github/preview.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>21</td>
+            <td><a href="16">Scrollbar e grid (criando um carrinho de compras)</a></td>
+            <td>21/05/23</td>
+            <td align="center" ><a href="16"><img width="300px" src="./images/carrinho-compra.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>

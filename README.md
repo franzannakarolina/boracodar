@@ -138,9 +138,15 @@
         </tr>
         <tr>
             <td>21</td>
-            <td><a href="16">Scrollbar e grid (criando um carrinho de compras)</a></td>
+            <td><a href="17">Scrollbar e grid (criando um carrinho de compras)</a></td>
             <td>21/05/23</td>
-            <td align="center" ><a href="16"><img width="300px" src="./images/carrinho-compra.png" /></a></td>
+            <td align="center" ><a href="17"><img width="300px" src="./images/carrinho-compra.png" /></a></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td><a href="18">Ajuste de iluminação</a></td>
+            <td>20/06/23</td>
+            <td align="center"><a href="17"><img width="300px" src="./images/iluminacao.png" width="100%"></a></td>
         </tr>
     </tbody>
 </table></p>

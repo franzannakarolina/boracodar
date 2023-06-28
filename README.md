@@ -146,7 +146,13 @@
             <td>24</td>
             <td><a href="18">Ajuste de iluminação</a></td>
             <td>20/06/23</td>
-            <td align="center"><a href="17"><img width="300px" src="./images/iluminacao.png" width="100%"></a></td>
+            <td align="center"><a href="17"><img width="300px" src="./images/iluminacao.png"></a></td>
+        </tr>
+        <tr>
+           <td>25</td>
+           <td><a href="19">Video Ambilight</a></td>
+           <td>27/06/23</td>
+           <td align="center"><a href="19"><img width="300px" src="./images/desafio25.png"</a></td>
         </tr>
     </tbody>
 </table></p>

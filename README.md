@@ -154,5 +154,11 @@
            <td>27/06/23</td>
            <td align="center"><a href="19"><img width="300px" src="./images/desafio25.png"</a></td>
         </tr>
+        <tr>
+           <td>34</td>
+           <td><a href="20">Select Customizado</a></td>
+           <td>05/09/23</td>
+           <td align="center"><a href="19"><img width="300px" src="./images/selected.png"</a></td>
+        </tr>
     </tbody>
 </table></p>

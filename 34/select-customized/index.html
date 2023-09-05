@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Select Customized</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./styles.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <div class="select">
+    <div id="category-select">
+      <label for="options-view-button">Categoria</label>
+      <input type="checkbox" id="options-view-button" />
+
+      <div id="select-button">
+        <div id="selected-value">
+          Selecione a categoria
+        </div>
+
+        <div id="chevrons">
+          <i data-lucide="chevron-down"></i>
+          <i data-lucide="chevron-up"></i>
+        </div>
+      </div>
+    </div>
+
+    <ul id="options">
+      <li class="option">
+        <input type="radio" name="category" value="bakery" data-label="Padaria" />
+
+        <i data-lucide="sandwich"></i>
+        <span class="label">Padaria</span>
+        <i data-lucide="check"></i>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    lucide.createIcons()
+  </script>
+  <script>
+    let select = document.querySelector('.select'),
+      seletedValue = document.getelementById('selected-value'),
+      optionsViewButton = document.getelementById('options-view-button'),
+      inputsOptions = document.querySelectorAll('.options input')
+
+    inputsOptions.forEach(input => {
+      input.addEventListener('click', event => {
+        seletedValue.textContent = input.dataset.label
+
+        const isMouseOrTouch = event.pointerType == "mouse" || event.pointerType == "touch"
+
+        isMouseOrTouch && optionsViewButton.click()
+      })
+    })
+
+    window.addEventListern('keydown', e => {
+      if (!select.classList.contains('open')) return
+
+      if (e.key == "Escape" || e.key == " ") {
+        optionsViewButton.click()
+      }
+    })
+
+    optionsViewButton.addEventListener('input', () => {
+      select.classList.toggle('open')
+
+      if (!select.classList.contains('open')) return
+
+      const input = document.querySelector('.option input:checked') || document.querySelector('.option input')
+
+      input.focus()
+    })
+  </script>
+</body>
+
+</html>
